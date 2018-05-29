@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-linkedin-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A component to display data from a linkedin user",
   "main": "./build/index.js",
   "author": "Rodrigo Santos da Silva<rodrigo.saint01@live.com>",
