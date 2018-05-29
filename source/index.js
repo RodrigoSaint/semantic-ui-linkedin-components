@@ -5,6 +5,7 @@ import PublicationItem from "./publication-item";
 import PublicationSection from "./publication-section";
 import SummarySection from "./summary-section";
 import EducationSection from "./education-section";
+import "./index.css";
 
 export default props => (
   <div>

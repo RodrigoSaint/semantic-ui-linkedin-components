@@ -1,0 +1,87 @@
+/* Timeline */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #2185d0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .container {
+    box-sizing: border-box;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    border: 15px solid #2185d0;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .container:nth-child(odd) {
+    left: 0;
+    
+  }
+  
+  /* Place the container to the right */
+  .container:nth-child(even) {
+    left: 50%;
+  }
+  
+  .container:nth-child(odd)::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #2185d0;
+  }
+  
+  .container:nth-child(even)::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #2185d0 transparent transparent;
+  }
+  
+  .container:nth-child(even)::after {
+    left: -16px;
+  }
+  
+  .divider-space{
+    margin: 0 0 1rem 0;
+  }
+  
+  .left-align{
+    float: left;
+    margin-top: 10px
+  }
