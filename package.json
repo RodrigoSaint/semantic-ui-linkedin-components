@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-linkedin-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A component to display data from a linkedin user",
   "main": "./build/index.js",
   "author": "Rodrigo Santos da Silva<rodrigo.saint01@live.com>",
@@ -10,6 +10,7 @@
   "maintainers": [
     "Rodrigo Santos da Silva <rodrigo.saint01@live.com>"
   ],
+  "homepage": "https://rodrigosaint.github.io/semantic-ui-linkedin-components/",
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production --optimize-minimize",
     "build:dev": "webpack --config webpack.config.js --mode development",
@@ -42,5 +43,13 @@
   },
   "files": [
     "build"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "linkedin",
+    "resume",
+    "online-resume",
+    "semantic-ui"
   ]
 }
